@@ -55,20 +55,6 @@ header{
     gap: 20px;
     justify-content: center;
 }
-li{
-    list-style-type: none;
-    width: 25%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-li:hover{
-    background-color: #5eecfc;
-    transition: all .4s ease 0s;
-}
-
 a{
     color: black;
     font-size: 20px;
@@ -79,25 +65,27 @@ a{
     height: auto;
     width: 100%;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     display: flex;
     gap: 10px;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     padding-top: 4vh;
 }
 #profile1{
-    height: 40vh;
+    height: auto;
     width: 40%;
     margin-left: 3%;
     border: solid 1px black;
     flex-wrap: wrap;
     flex-direction: column;
     padding: 2%;
-    /* display: flex; */
+    display: flex;
     background-color: #fffffffc;
     color: black;
     margin-bottom: 10px;
+    align-items: stretch;
+    justify-content: center;
 }
 #profile2{
     margin-left: 1%;
@@ -164,7 +152,7 @@ a{
     flex: auto;
     display: flex;
     flex-wrap: wrap;
-    height: auto;
+    height: 30vh;
 }
 .wrap{
     flex-wrap: wrap;
@@ -187,20 +175,8 @@ a{
         width: 95%;
     }
 }
-@media screen and (max-height:850) {
-    .main{
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-    }
-    #content{
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-    }
-    #profile1{
-        width: 95%;
-        height: 70vh;
-        display: flex;
+@media screen and (max-height:950px) {
+    .column1{
+        height: 43vh;
     }
 }
